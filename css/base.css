@@ -12,6 +12,7 @@ blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,
 }
 ul,li {
     list-style: none;
+    float: left;
 }
 a {
     text-decoration: none;
@@ -77,7 +78,6 @@ header .w a {
     margin-left: 200px;
 }
 .shortcut li {
-    float: left;
     margin-right: 14px;
 }
 .shortcut i {margin-right: 5px;}
@@ -232,6 +232,7 @@ header .w a {
 .service li:nth-child(4) h5 {
     background-position:-123px -192px; 
 }
+/* 很多dl/dt/dd */
 .help {
     padding-top: 25px;
     height: 202px;
@@ -283,4 +284,84 @@ header .w a {
 .coverage a i {
     display: inline-block;
     vertical-align: top;
+}
+/* copyright */
+.copyright {
+    margin-top: 20px;
+    color: #666;
+    font-size: 0;
+    text-align: center;
+}
+.copyright p+p,
+.copyright a,
+.copyright span {
+    font-size: 12px;
+}
+.copyright p:first-child a {
+    color: #666;
+    margin: 0;
+}
+.copyright p:nth-child(2) {
+    margin-top: 18px;
+}
+.copyright span {
+    color: #ccc;
+    margin: 0 10px;
+    padding: 0;
+}
+.copyright p+p {
+    color: #999;
+    height: 22px;
+}
+.global b {
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    vertical-align: top;
+    background: url(../img/footer.png) no-repeat;
+    background-position: -108px -155px;
+}
+.global a:nth-child(3) b {
+    background-position: -128px -155px;
+     height: 10px;
+}
+.global a:nth-child(5) b {
+    background-position: -148px -155px;
+     height: 10px;
+}
+.global a:nth-child(7) b {
+    background-position: -168px -155px;
+     height: 10px;
+}
+.global a:nth-child(9) b {
+    background-position: -108px -172px;
+     height: 10px;
+}
+.copyright p:last-child {
+    display: inline-block;
+    margin: 35px 0;
+    height: 32px;
+}
+.copyright p:last-child a {
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    background: url(../img/footer.png);
+    background-position: -205px 0;
+    margin: 0 3px;
+}
+.copyright p:last-child a:nth-child(1) {
+    background-position: -205px -111px;
+}
+.copyright p:last-child a:nth-child(2) {
+    background-position: -205px -74px;
+}
+.copyright p:last-child a:nth-child(3) {
+    background-position: -205px -37px;
+}
+.copyright p:last-child a:nth-child(4) {
+    background-position: -205px 0;
+}
+.copyright p:last-child a:nth-child(5) {
+    background-position: 0 -155px;
 }
